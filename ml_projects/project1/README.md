@@ -1,6 +1,6 @@
 # Project 1 — Linear Regression on *carbig* (Weight → Horsepower)
 
-This repository contains my submission for **ECE 4370 / ECE 5370 – Project 1**.  
+This directory contains my submission for **ECE 4370 / ECE 5370 – Project 1**.  
 The assignment requires implementing **simple linear regression** on MATLAB’s *carbig* dataset using **Weight** as the predictor (feature) and **Horsepower** as the target (label), with **two methods**:
 
 1) **Closed‑form solution (Normal Equation)**  
