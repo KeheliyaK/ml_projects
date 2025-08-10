@@ -1,6 +1,6 @@
 # Project 1 — Linear Regression on *carbig* (Weight → Horsepower)
 
-This repository contains my submission for **ECE 4370 / ECE 5370 – Project 1**.  
+This directory contains my submission for **ECE 4370 / ECE 5370 – Project 1**.  
 The assignment requires implementing **simple linear regression** on MATLAB’s *carbig* dataset using **Weight** as the predictor (feature) and **Horsepower** as the target (label), with **two methods**:
 
 1) **Closed‑form solution (Normal Equation)**  
@@ -98,17 +98,6 @@ at the top of `Project1.py`.
 ## Notes & Tips
 - If you see an error like *“ImportError: Missing optional dependency 'openpyxl'”*, install it with `pip install openpyxl`.
 - If the plots look odd, check that your `Weight` and `Horsepower` columns exist and that `df.dropna()` didn’t remove all rows.
-- For faster GD convergence, you can try scaling `Weight` (e.g., subtract mean and divide by std) and then adjust `rho` accordingly.
-
----
-
-## What to Submit
-Per the assignment, upload your `.py` file to Blackboard by the deadline and name your file as:
-```
-Lastname_Firstname_Project1.py
-```
-(If your instructor requires the plots, export them from the figure window as images or a PDF.)
-
 ---
 
 ## License
