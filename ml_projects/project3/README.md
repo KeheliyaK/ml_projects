@@ -6,8 +6,8 @@ We study the **bias–variance trade‑off** by fitting a *linear regression wit
 **ridge regularization** parameter $\lambda$.
 
 ## Files
-- `Keheliya_Kudahewa_project3.py` — Main script. Generates data, fits models, computes **bias$^2$**, **variance**, and **test error**, and plots them vs. $\ln(\lambda)$.
-- `Proj3.pdf` — Assignment description (for reference).
+- `Project3.py` — Main script. Generates data, fits models, computes   $bias^2$, **variance**, and **test error**, and plots them vs. $\ln(\lambda)$.
+
 
 ## Requirements
 - Python 3.8+
@@ -17,9 +17,10 @@ Install: `pip install numpy matplotlib`
 ## Method (assignment spec)
 - Draw **L = 100** independent training sets, each with **N = 25** points from $X\sim\mathcal{U}(0,1)$ and $t=\sin(2\pi X)+\epsilon$, with $\epsilon\sim\mathcal{N}(0,0.3^2)$.  
 - For a grid of **$\lambda$** values, fit **linear regression with non‑linear models** using **Gaussian basis functions** with width **$s=0.1$** on each dataset.  
-- Report **bias$^2$**, **variance**, and a **test error** measured on an i.i.d. test set of **1000** points.  
+- Report $bias^2$,**variance**, and a **test error** measured on an i.i.d. test set of **1000** points.  
 
 Formulas used:
+
 $$
 \bar f(x) = \frac{1}{L}\sum_{\ell=1}^{L} f^{(\ell)}(x)
 $$
@@ -35,7 +36,7 @@ $$
 
 ## What the script does
 - **Design matrix (Gaussian RBFs):** $\Phi_{ij}=\exp\!\big(-\tfrac{(x_i-c_j)^2}{2s^2}\big)$ with **$m=6$** centers evenly spaced in $[0,1]$ and **$s=0.1$**.  
-- **Ridge solution:** $\mathbf w = (\Phi^\top\Phi + \lambda I)^{-1}\Phi^\top \mathbf t$.
+- **Ridge solution:** $\mathbf {w} = (\Phi^\top\Phi + \lambda I)^{-1}\Phi^\top \mathbf t$.
 - **Ensemble loop:** For each $\lambda$ (using **$\ln(\lambda)$ from -2.5 to 1.5 in steps of 0.25**), repeat **L=100** times:
   generate a new size‑25 training set, fit the model, store predictions on a fixed evaluation grid and on a 1000‑point test set.
 - **Metrics:** Compute **bias$^2$**, **variance**, and **test MSE** by averaging across the ensemble.
@@ -43,9 +44,9 @@ $$
 - **Reproducibility:** `np.random.seed(50)` is set near the main loop.
 
 ## Usage
-From the folder containing `Keheliya_Kudahewa_project3.py`:
+From the folder containing `Project3.py`:
 ```bash
-python Keheliya_Kudahewa_project3.py
+python Project3.py
 ```
 Feel free to tweak at the top of the script:
 - `L` (ensemble size, default 100)
