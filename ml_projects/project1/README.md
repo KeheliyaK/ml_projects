@@ -52,11 +52,13 @@ X = [[1, weight_1], [1, weight_2], ..., [1, weight_m]]
 
 ### 2) Closed‑form solution (Normal Equation)
 Uses the standard normal equation for simple linear regression:
-\[
+
+$$
 \mathbf{w}_{\text{closed}} = (X^\top X)^{-1} X^\top y
-\]
-where \(\mathbf{w} = [b,\; m]^\top\) gives intercept \(b\) and slope \(m\).  
-Predictions: \(\hat{y} = X\,\mathbf{w}\).
+$$
+
+where \(\mathbf ${w} = [b,\; m]^\top\$) gives intercept $\(b\)$ and slope $\(m\)$.  
+Predictions: $\(\hat{y} = X\.\{w}\)$.
 
 ### 3) Gradient Descent
 Initializes weights randomly and iteratively updates:
