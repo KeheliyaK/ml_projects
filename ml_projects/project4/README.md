@@ -5,27 +5,6 @@ This project has **two independent parts**:
 1) **MNIST (handwritten digits)** — train a **logistic regression** classifier and run inference.  
 2) **C. elegans experimental images** — train a **softmax (multiclass) classifier** and run inference.
 
-> ✅ You asked to **rename the scripts**. In this README I use the **new names** first and note the originals in parentheses.
-
----
-
-## Repository layout (after renaming)
-```
-project4/
-├── mnist_train.py         (was: biasMNIST.py)
-├── infer_mnist.py         (was: outputMNIST.py)
-├── train_Celegans.py      (was: CElegance.py)
-├── infer_Celegans.py      (was: outputC.py)
-└── README_Project4.md
-```
-
-**Rename commands (macOS/Linux):**
-```bash
-mv biasMNIST.py mnist_train.py
-mv outputMNIST.py infer_mnist.py
-mv CElegance.py train_Celegans.py
-mv outputC.py infer_Celegans.py
-```
 
 ---
 
