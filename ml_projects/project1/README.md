@@ -98,17 +98,6 @@ at the top of `Project1.py`.
 ## Notes & Tips
 - If you see an error like *“ImportError: Missing optional dependency 'openpyxl'”*, install it with `pip install openpyxl`.
 - If the plots look odd, check that your `Weight` and `Horsepower` columns exist and that `df.dropna()` didn’t remove all rows.
-- For faster GD convergence, you can try scaling `Weight` (e.g., subtract mean and divide by std) and then adjust `rho` accordingly.
-
----
-
-## What to Submit
-Per the assignment, upload your `.py` file to Blackboard by the deadline and name your file as:
-```
-Lastname_Firstname_Project1.py
-```
-(If your instructor requires the plots, export them from the figure window as images or a PDF.)
-
 ---
 
 ## License
