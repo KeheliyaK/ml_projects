@@ -59,5 +59,3 @@ Defaults in the script:
 - With **$N_{\text{train}}=10$**, training error typically decreases with $M$, while test error rises for large $M$ (overfitting).
 - With **$N_{\text{train}}=100$**, the train/test curves are closer and the minimum test RMS occurs at a moderate $M$.
 
-## What to submit
-Submit your `.py` file (and generated figure if required) per the course’s naming and upload instructions.
