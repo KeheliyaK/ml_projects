@@ -31,10 +31,13 @@ Install: `pip install numpy matplotlib`
 
 4) **Evaluation**
    - For each $M=0,\ldots,9$, compute
-     $$
-     E_{\mathrm{RMS}}=\sqrt{\frac{J(\mathbf{w})}{N}},\quad
-     J(\mathbf{w})=\sum_i \big(\hat t_i - t_i\big)^2
-     $$
+
+$$
+E_{\mathrm{RMS}}=\sqrt{\frac{J(\mathbf{w})}{N}},\quad
+J(\mathbf{w})=\sum_i\big(\hat t_i - t_i\big)^2
+$$
+     
+    
    - Record **train** and **test** errors for all 10 cases.
 
 5) **Plots**
